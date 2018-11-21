@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'net/http'
 require 'json'
 require 'pp'
@@ -22,3 +23,12 @@ get ('/food') do
 	@restaurant = response['categories']
 	erb :food
 end 
+=======
+require 'sinatra'
+
+
+get('/weather') do
+	erb :weather 
+
+end 
+>>>>>>> a0e8aaf10bff72c459cd99af7602fc41dfbd5a67

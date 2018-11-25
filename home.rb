@@ -32,3 +32,29 @@ get('/weather') do
 
 end 
 >>>>>>> a0e8aaf10bff72c459cd99af7602fc41dfbd5a67
+
+#get ('/food') do
+ #  uri = URI("https://developers.zomato.com/api/v2.1/categories")
+  ##req['user-key'] = "22eb257439a64baf66e324e287db18de"
+
+#   res = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) {|http|
+ #      http.request(req)
+  # }
+
+   #response = JSON.load(res.body)
+
+   #pp response[0]
+   #@listOfCategories = []
+
+   #@restaurant = response['categories']
+
+   #@restaurant.each { |x|
+    #   @listOfCategories.push(x['categories']['name'])
+   #}
+
+   #@test1 = @restaurant[2]['categories']['id']
+   #@test2 = @restaurant[2]['categories']['name']
+
+
+   #erb :food
+#end

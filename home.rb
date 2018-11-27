@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 require 'net/http'
 require 'json'
 require 'pp'
 require 'sinatra'
 get('/weather') do
-    erb :weather 
-end 
+    erb :weather
+end
 
 get ('/food') do
 	uri = URI("https://developers.zomato.com/api/v2.1/categories")
@@ -22,16 +21,13 @@ get ('/food') do
 
 	@restaurant = response['categories']
 	erb :food
-end 
-=======
+end
+
 require 'sinatra'
 
 
-get('/weather') do
-	erb :weather 
 
-end 
->>>>>>> a0e8aaf10bff72c459cd99af7602fc41dfbd5a67
+
 
 #get ('/food') do
  #  uri = URI("https://developers.zomato.com/api/v2.1/categories")

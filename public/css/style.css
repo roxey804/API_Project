@@ -1,13 +1,43 @@
-body {
+#index{
   text-align: center;
-  background: url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/330771/pexels-photo-330771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
   background-repeat: no-repeat;
   color: navy;
-  font-family: helvetica;
+  font-family: 'PT Sans', sans-serif;
+}
+ h2 {background-color: white;
+display: inline-block;}
+
+/* a {color: navy; font-style: normal;} */
+
+#index button {font-family: 'PT Sans', sans-serif;
+font-size: 24px;}
+
+button.btn1{background-color: green; color: white;}
+button.btn2 {background-color: orange; color: black;}
+/* To target the button specifically there must be NO SPACE betweeen the element and class */
+
+#weatherfinder {
+  text-align: center;
+  background-image: url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&h=350");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: navy;
+  font-family: 'PT Sans', sans-serif;
+}
+#weather2
+{
+  text-align: center;
+  background-image: url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&h=350");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: navy;
+  font-family: 'PT Sans', sans-serif;
 }
 
-header {
+
+header .weather {
   background-color: green;
   opacity: 0.8;
 }
@@ -26,6 +56,7 @@ footer {
   font-size: 18px;
   position : absolute;
     bottom : 0;
+    margin-left: 200px;
     background: white;
   }
 

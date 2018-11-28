@@ -4,6 +4,10 @@ require 'pp'
 require 'sinatra'
 require 'date'
 
+
+get('/') do
+  erb :index
+end
 get('/weather') do
     erb :weather
 end

@@ -72,8 +72,8 @@ a {
 
 /* To target the button specifically there must be NO SPACE betweeen the element and class */
 
-
-
+h2 {font-family:font-family: 'PT Sans', sans-serif; }
+.events, h2 {font-family:font-family: 'PT Sans', sans-serif; }
 #weatheroutput h2 {
   font-size: 30px;
 }

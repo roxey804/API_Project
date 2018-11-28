@@ -21,9 +21,22 @@ end
 
 #see action=/signup in the .erb file
 post('/weatheroutput') do
-  # greeting = params[:greeting] || "Hi There"
+  @city = params[:city] || "You didn't give any location!"
+  if @city.downcase == "london"
+    @weather = "rainy"
+  else
+    @weather = "unknown"
+  end
   erb :weatheroutput
 end
+
+get ('/events') do
+  erb :events
+end
+
+
+
+
 
 get ('/food') do
 	uri = URI("https://developers.zomato.com/api/v2.1/categories")
@@ -37,6 +50,8 @@ get ('/food') do
 	response = JSON.load(res.body)
 
 	#pp response[0]
+
+
 
 	@restaurant = response['categories']
 	erb :food

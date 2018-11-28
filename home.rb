@@ -11,16 +11,18 @@ end
 get('/weather') do
     erb :weather
 end
-
+get '/index' do
+  erb :index
+end
 
 # current_time = DateTime.now
 #
 # current_time.strftime "%d/%m/%Y %H:%M"
 
 #see action=/signup in the .erb file
-post('/weather2') do
+post('/weatheroutput') do
   # greeting = params[:greeting] || "Hi There"
-  erb :weather2
+  erb :weatheroutput
 end
 
 get ('/food') do

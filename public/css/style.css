@@ -6,16 +6,23 @@
   color: navy;
   font-family: 'PT Sans', sans-serif;
 }
- h2 {background-color: white;
-display: inline-block;}
+ #index h2 {background-color: white;
+display: inline-block;font-size: 48px;}
 
 /* a {color: navy; font-style: normal;} */
 
-#index button {font-family: 'PT Sans', sans-serif;
-font-size: 24px;}
-
-button.btn1{background-color: green; color: white;}
+button {font-family: 'PT Sans', sans-serif;
+font-size: 40px; border: none; border-radius: 10px;}
+a {color: white; text-decoration: none;}
+.btn1:hover {background-color: lime;}
+.btn2:hover { background-color: red;}
+.btn3:hover { background-color: pink;}
+.btn4:hover { background-color: blue;}
+button.btn1{background-color: green;}
 button.btn2 {background-color: orange; color: black;}
+button.btn3 {background-color: purple; color: white;}
+button.btn4 {background-color: navy; color: white; font-size: 28px;}
+.btn5:hover {background-color: lime;}
 /* To target the button specifically there must be NO SPACE betweeen the element and class */
 
 #weatherfinder {
@@ -26,7 +33,7 @@ button.btn2 {background-color: orange; color: black;}
   color: navy;
   font-family: 'PT Sans', sans-serif;
 }
-#weather2
+#weatheroutput
 {
   text-align: center;
   background-image: url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&h=350");
@@ -35,6 +42,7 @@ button.btn2 {background-color: orange; color: black;}
   color: navy;
   font-family: 'PT Sans', sans-serif;
 }
+#weatheroutput h2 {font-size: 30px;}
 
 
 header .weather {
@@ -64,3 +72,5 @@ input[type="submit"] {
   background: green;
   color: black;
 }
+
+/* @media screen and (max-width:) */

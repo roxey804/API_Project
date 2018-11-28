@@ -2,14 +2,20 @@ require 'net/http'
 require 'json'
 require 'pp'
 require 'sinatra'
+require 'date'
 
 get('/weather') do
     erb :weather
 end
 
+
+# current_time = DateTime.now
+#
+# current_time.strftime "%d/%m/%Y %H:%M"
+
 #see action=/signup in the .erb file
 post('/weather2') do
-  greeting = params[:greeting] || "Hi There"
+  # greeting = params[:greeting] || "Hi There"
   erb :weather2
 end
 
@@ -29,8 +35,6 @@ get ('/food') do
 	@restaurant = response['categories']
 	erb :food
 end
-
-require 'sinatra'
 
 
 

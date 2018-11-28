@@ -11,7 +11,7 @@ end
 get('/weather') do
     erb :weather
 end
-get '/index' do
+get ('/index') do
   erb :index
 end
 

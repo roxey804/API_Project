@@ -2,8 +2,15 @@ require 'net/http'
 require 'json'
 require 'pp'
 require 'sinatra'
+
 get('/weather') do
     erb :weather
+end
+
+#see action=/signup in the .erb file
+post('/weather2') do
+  greeting = params[:greeting] || "Hi There"
+  erb :weather2
 end
 
 get ('/food') do

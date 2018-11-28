@@ -1,21 +1,35 @@
+body {
+  text-align: center;
+  background: url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: navy;
+  font-family: helvetica;
+}
 
+header {
+  background-color: green;
+  opacity: 0.8;
+}
 
-    body {
-      text-align: center;
-      background: url("./images/Weathericons.jpg");
-      background-size: cover;
-      background-position: center;
-      color: navy;
-      font-family: helvetica;
-    }
-    header {background-color: green; opacity: 0.8;}
+p {
+  font-size: 24px;
+}
 
+input {
+  border-style: solid;
+  padding: 10px;
+  font-size: 20px;
+}
 
-    p {font-size: 24px;}
-    
-    input {border-style: solid; padding: 10px; font-size: 20px; }
+footer {
+  font-size: 18px;
+  position : absolute;
+    bottom : 0;
+  }
 
-    footer {font-size: 18px; }
-    
-    input[type="submit"] {background: green; color: black;}
- 
+input[type="submit"] {
+  background: green;
+  color: black;
+}
